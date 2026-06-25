@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Globe, Menu, User, Compass, Home, Map, Key, Tent } from 'lucide-react';
+import MiddleNavigation from './MiddleNavigation';
+import AuthActionMenu from './AuthActionMenu';
 
 const Landing = () => {
   // Mock categories for the Airbnb vibe
@@ -24,16 +26,7 @@ const Landing = () => {
         </Link>
 
         {/* Middle Navigation (Mock Search Text) */}
-        <div className="hidden md:flex items-center border border-gray-200 shadow-sm hover:shadow-md transition rounded-full py-2 px-4 cursor-pointer gap-4 text-sm font-medium">
-          <button className="px-2">Anywhere</button>
-          <div className="w-px h-4 bg-gray-200"></div>
-          <button className="px-2">Any week</button>
-          <div className="w-px h-4 bg-gray-200"></div>
-          <button className="text-gray-400 font-normal px-2">Add guests</button>
-          <div className="bg-rose-500 text-white p-2 rounded-full">
-            <Search className="h-4 w-4" />
-          </div>
-        </div>
+        <MiddleNavigation />
 
         {/* Right Navigation Actions */}
         <div className="flex items-center gap-4">
@@ -45,21 +38,7 @@ const Landing = () => {
           </button>
           
           {/* Auth Action Actions Menu */}
-          <div className="flex items-center gap-3 border border-gray-200 p-2 rounded-full shadow-sm hover:shadow-md transition">
-            <Menu className="h-5 w-5 text-gray-500 ml-1 cursor-pointer" />
-            <div className="flex items-center gap-2">
-              <Link 
-                to="/login" className="text-sm font-semibold text-gray-700 hover:text-rose-500 transition px-1">
-                Log In
-              </Link>
-              <Link 
-                to="/register" 
-                className="bg-rose-500 text-white text-sm font-semibold px-4 py-1.5 rounded-full hover:bg-rose-600 transition"
-              >
-                Sign Up
-              </Link>
-            </div>
-          </div>
+          <AuthActionMenu />
         </div>
       </header>
 

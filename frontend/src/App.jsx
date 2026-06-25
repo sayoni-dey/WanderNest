@@ -4,7 +4,7 @@ import { AuthProvider } from './context/AuthContext';
 
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Landing from './pages/Landing';
+import Landing from './pages/LandingPage/Landing';
 
 // Placeholder view for home dashboard route
 const HomePlaceholder = () => (
