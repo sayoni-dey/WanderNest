@@ -50,7 +50,7 @@ This Airbnb Clone is built using the MERN stack and focuses on providing a seaml
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React.js
