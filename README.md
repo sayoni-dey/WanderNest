@@ -10,6 +10,9 @@ This Airbnb Clone is built using the MERN stack and focuses on providing a seaml
 
 ---
 
+## Flow Diagram
+![WanderNest Architecture](docs/WanderNestFlow.jpg)
+
 ## Features
 
 ### Authentication
